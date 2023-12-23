@@ -4,7 +4,7 @@ import { extension_settings, getContext } from '../../../extensions.js';
 let hasPresence = false;
 
 async function setPresence(name = '') {
-    return await fetch('/api/discord/update?name=' + encodeURIComponent(name) , {
+    return await fetch('/api/plugins/discord/update?name=' + encodeURIComponent(name) , {
         method: 'POST',
         headers: getRequestHeaders(),
     });
@@ -47,6 +47,7 @@ async function onChatChanged() {
         toastr.warning('Discord Rich Presence plugin not found. Extension will be disabled.');
         console.log('Discord Rich Presence plugin not found');
         $('#discord_rpc_enabled').prop('checked', false);
+        extension_settings.discord.enabled = false;
         saveSettingsDebounced();
     }
 }

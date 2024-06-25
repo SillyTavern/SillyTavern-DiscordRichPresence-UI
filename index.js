@@ -66,7 +66,7 @@ jQuery(() => {
                     Display active character name in Discord
                 </label>
                 <small>
-                    Requires a server plugin to be loaded. Get it <a target="_blank" href="https://github.com/Cohee1207/SillyTavern-DiscordRichPresence-Server">here</a>.
+                    Requires a server plugin to be loaded. Get it <a target="_blank" href="https://github.com/SillyTavern/SillyTavern-DiscordRichPresence-Server">here</a>.
                 </small>
             </div>
         </div>
